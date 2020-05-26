@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Montserrat:wght@900&family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 *{
     padding: 0;
@@ -12,7 +14,7 @@
     color: thistle;
 }
 .navbar-nav{
-   margin-left: 500px;
+   margin-left: 700px;
    
 }
 .nav-item{
@@ -30,3 +32,31 @@
     transition-duration:1.5s ;
     transition: ease-in-out ;
 }
+html,body{
+    height: 100%;
+}
+.home{
+    background-image: url("../Images/hostel11.jpg");
+    background-color: rgba(0,0,0,0.65);
+    background-blend-mode: darken;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:50%;
+    position: relative;
+}
+.homeContent{
+    color: white;
+    font-family: 'Noto Serif', serif;
+    text-shadow: 4px 4px 4px #aaa;
+    font-weight: bolder;
+    letter-spacing: 0.3em;
+    position: absolute;
+    text-transform: uppercase;
+    margin-top: 10%;
+    margin-left: 36%;
+}
+.homeContent h4{
+    font-family: 'Pacifico', cursive;
+}
+
