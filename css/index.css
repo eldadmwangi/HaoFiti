@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar-brand{
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    margin-left: 300px;
+    letter-spacing: 0.4em;
+    color: thistle;
+}
+.navbar-nav{
+   margin-left: 500px;
+   
+}
+.nav-item{
+    margin-right: 50px;
+}
+.navbar a{
+    font-weight: 400;
+    letter-spacing: 0.2em;
+
+}
+.navbar-nav a:hover{
+    background-color: thistle;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition-duration:1.5s ;
+    transition: ease-in-out ;
+}
