@@ -66,6 +66,7 @@ html,body{
     flex-direction: row;
     height:400px;
     margin-top: 50px;
+    border: none;
 
 }
 .w-100{
@@ -82,6 +83,7 @@ body{
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
 }
+
 .about {
     margin-top: 50px;
 }
