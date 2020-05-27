@@ -14,20 +14,20 @@
     color: thistle;
 }
 .navbar-nav{
-   margin-left: 700px;
+   margin-left: 900px;
    
 }
 .nav-item{
     margin-right: 50px;
+    
 }
 .navbar a{
     font-weight: 400;
     letter-spacing: 0.2em;
-
+    font-size: 15px;
 }
 .navbar-nav a:hover{
-    background-color: thistle;
-    border-radius: 2px;
+    border-radius: 1px;
     text-transform: uppercase;
     transition-duration:1.5s ;
     transition: ease-in-out ;
@@ -45,6 +45,7 @@ html,body{
     height:500px;
     position: relative;
 }
+
 .homeContent{
     color: white;
     font-family: 'Noto Serif', serif;
