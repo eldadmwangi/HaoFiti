@@ -43,7 +43,7 @@ html,body{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    height:500px;
+    height:50%;
     position: relative;
 }
 
@@ -102,5 +102,20 @@ footer {
     margin-top: 100px;
   }
   
-  
+  @media screen and (max-width : 720px){
+      .homeContent {
+          margin-left:unset;
+          margin-top: 30%;
+      }
+      .w-100,.card{
+          height: 200px;
+      }
+      
+      footer{
+          margin-top: 30px;
+      }
+      #maincard{
+          margin-top: 30px;
+      }
+  }
 
