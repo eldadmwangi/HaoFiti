@@ -36,17 +36,16 @@
 html,body{
     height: 100%;
 }
-.home{
+#pricingheader{
     background-image: url("../Images/hostel11.jpg");
     background-color: rgba(0,0,0,0.65);
     background-blend-mode: darken;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    height:50%;
+    height:500px;
     position: relative;
 }
-
 .homeContent{
     color: white;
     font-family: 'Noto Serif', serif;
@@ -58,64 +57,15 @@ html,body{
     margin-top: 10%;
     margin-left: 36%;
 }
-.homeContent h4{
-    font-family: 'Pacifico', cursive;
+#room1{
+    height: 200px;
+    width: 50%;
+    height:200px;
+    
 }
-#maincard{
+.maincard{
     display: flex;
     flex-direction: row;
-    height:400px;
-    margin-top: 50px;
-    border: none;
     width: 100%;
-
+    height:200px;
 }
-.w-100{
-    height: 400px;
-    width: 100%;
-}
-.card-footer{
-    text-align: center;
-    
-
-}
-body{
-    overflow-x:hidden;
-}
-.container-fluid , .container{
-    width:100%;
-    font-family: 'Dosis', sans-serif;
-    font-size: 20px;
-}
-
-
-.about {
-    margin-top: 50px;
-}
-footer {
-    
-    background-color: #010808;
-    letter-spacing: 0.1em;
-    opacity: 0.9;
-    color: white;
-    padding: 32px;
-    margin-top: 100px;
-  }
-  
-  @media screen and (max-width : 720px){
-      .homeContent {
-          margin-left:unset;
-          margin-top: 30%;
-      }
-      .w-100,.card{
-          height: 200px;
-      }
-      
-      footer{
-          margin-top: 30px;
-      }
-      #maincard{
-          margin-top: 30px;
-      }
-  }
-
