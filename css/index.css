@@ -43,7 +43,7 @@ html,body{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    height:500px;
+    height:50%;
     position: relative;
 }
 
@@ -66,6 +66,7 @@ html,body{
     flex-direction: row;
     height:400px;
     margin-top: 50px;
+    border: none;
     width: 100%;
 
 }
@@ -81,14 +82,40 @@ html,body{
 body{
     overflow-x:hidden;
 }
-.container-fluid{
+.container-fluid , .container{
     width:100%;
-}
-.container{
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
 }
+
+
 .about {
     margin-top: 50px;
 }
+footer {
+    
+    background-color: #010808;
+    letter-spacing: 0.1em;
+    opacity: 0.9;
+    color: white;
+    padding: 32px;
+    margin-top: 100px;
+  }
+  
+  @media screen and (max-width : 720px){
+      .homeContent {
+          margin-left:unset;
+          margin-top: 30%;
+      }
+      .w-100,.card{
+          height: 200px;
+      }
+      
+      footer{
+          margin-top: 30px;
+      }
+      #maincard{
+          margin-top: 30px;
+      }
+  }
 
