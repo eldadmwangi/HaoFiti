@@ -35,17 +35,17 @@
 html,body{
     height: 100%;
 }
-.home{
+.book{
     background-image: url("../Images/hostel11.jpg");
     background-color: rgba(0,0,0,0.65);
     background-blend-mode: darken;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    height:500px;
+    height:30%;
     position: relative;
 }
-.homeContent{
+.bookHead{
     color: white;
     font-family: 'Noto Serif', serif;
     text-shadow: 4px 4px 4px #aaa;
@@ -56,23 +56,3 @@ html,body{
     margin-top: 10%;
     margin-left: 36%;
 }
-.homeContent h4{
-    font-family: 'Pacifico', cursive;
-}
-#maincard{
-    display: flex;
-    flex-direction: row;
-    height:400px;
-
-}
-.w-100{
-    height: 400px;
-}
-.card-footer{
-    text-align: center;
-
-}
-body{
-    overflow-x:hidden;
-}
-
