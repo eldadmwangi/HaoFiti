@@ -7,6 +7,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-size: 15px;
 }
 .navbar-brand{
     font-family: 'Bangers', cursive;
@@ -71,7 +72,6 @@ p span{
     color: white;
 }
 footer {
-    
     background-color: #010808;
     letter-spacing: 0.1em;
     opacity: 0.9;
