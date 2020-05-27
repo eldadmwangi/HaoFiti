@@ -35,7 +35,7 @@
 html,body{
     height: 100%;
 }
-.book,conta{
+.book{
     background-image: url("../Images/hostel11.jpg");
     background-color: rgba(0,0,0,0.65);
     background-blend-mode: darken;
