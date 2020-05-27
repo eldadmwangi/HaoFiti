@@ -59,4 +59,7 @@ html,body{
 .homeContent h4{
     font-family: 'Pacifico', cursive;
 }
-
+#maincard{
+    display: flex;
+    flex-direction: row;
+}
