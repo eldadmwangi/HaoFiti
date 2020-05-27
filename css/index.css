@@ -87,4 +87,13 @@ body{
 .about {
     margin-top: 50px;
 }
+footer {
+    background-color: #010808;
+    opacity: 0.9;
+    color: white;
+    padding: 32px;
+    margin-top: 100px;
+  }
+  
+  
 
