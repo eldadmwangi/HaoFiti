@@ -24,3 +24,54 @@ $(document).ready(function(){
     $("#carouselExampleFade").carousel("next");
   });
 });
+
+// hostel booking functionality
+function bookHostel (name,type,people) {
+  this.name = name;
+  this.type = type;
+  this.people = people;
+}
+
+bookHostel.prototype.fullbookHostel = function () {
+  return this.name + " " + this.type + " and " + this.people;
+};
+
+function amount(price) {
+  this.price = price;
+
+}
+
+amount.prototype.finalamount = function () {
+  return this.price;
+};
+
+var typePrice = [20000, 15000, 5000]
+var orderList=[];
+
+$(document).ready(function () {
+  $('form#my-Form').submit(function (event) {
+      event.preventDefault();
+      var hostelNAme = $("#type").val();
+
+      var hostelSize = $('#size').val();
+      var peopleinHostel=$("#people").val();
+  
+
+      var price = typePrice[hostelSize - 1];
+       
+      newbookHostel = new bookHostel(hostelNAme, hostelSize, peopleinHostel);
+      newamount = new amount(price);
+      var order={
+        name:hostelNAme,
+        size:hostelSize,
+        people:peopleinHostel
+      }
+
+      $("#test").html("You have booked " + order.name + "Room size:" + order.size + "with a capacity of " + order.people + "people"); 
+
+      $("#total").html(price);
+
+    });
+
+  })
+    
