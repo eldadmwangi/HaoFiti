@@ -14,8 +14,7 @@
     color: thistle;
 }
 .navbar-nav{
-   margin-left: 700px;
-   
+   margin-left: 800px;
 }
 .nav-item{
     margin-right: 50px;
@@ -23,10 +22,11 @@
 .navbar a{
     font-weight: 400;
     letter-spacing: 0.2em;
-
 }
+
+
 .navbar-nav a:hover{
-    background-color: thistle;
+    
     border-radius: 2px;
     text-transform: uppercase;
     transition-duration:1.5s ;
@@ -35,14 +35,14 @@
 html,body{
     height: 100%;
 }
-.book{
+.container-fluid{
     background-image: url("../Images/hostel11.jpg");
     background-color: rgba(0,0,0,0.65);
     background-blend-mode: darken;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    height:30%;
+    height:500px;
     position: relative;
 }
 .bookHead{
