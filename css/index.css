@@ -42,7 +42,7 @@ html,body{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    height:50%;
+    height:500px;
     position: relative;
 }
 .homeContent{
@@ -62,4 +62,16 @@ html,body{
 #maincard{
     display: flex;
     flex-direction: row;
+    height:400px;
+
+}
+.w-100{
+    height: 400px;
+}
+.card-footer{
+    text-align: center;
+
+}
+body{
+    overflow-x:hidden;
 }
