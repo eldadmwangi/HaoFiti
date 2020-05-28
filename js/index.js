@@ -1,34 +1,9 @@
-$(document).ready(function(){
-  // Activate Carousel
-  $("#carouselExampleFade").carousel();
-    
-  // Enable Carousel Indicators
-  $(".item1").click(function(){
-    $("#carouselExampleFade").carousel(0);
-  });
-  $(".item2").click(function(){
-    $("#carouselExampleFade").carousel(1);
-  });
-  $(".item3").click(function(){
-    $("#carouselExampleFade").carousel(2);
-  });
-  $(".item4").click(function(){
-    $("#carouselExampleFade").carousel(3);
-  });
-    
-  // Enable Carousel Controls
-  $(".left").click(function(){
-    $("#carouselExampleFade").carousel("prev");
-  });
-  $(".right").click(function(){
-    $("#carouselExampleFade").carousel("next");
-  });
-});
-
 // hostel booking functionality
-function bookHostel (name,type,people) {
+function bookHostel (name,phone,type,people) {
   this.name = name;
+  this.phone = phone;
   this.type = type;
+  this.size =size;
   this.people = people;
 }
 
@@ -45,12 +20,27 @@ amount.prototype.finalamount = function () {
   return this.price;
 };
 
-var typePrice = [20000, 15000, 5000]
+var typePrice = [20000, 15000, 10000]
 var orderList=[];
 
+
+
 $(document).ready(function () {
-  $('form#my-Form').submit(function (event) {
+
+  $('#submitButton').click(function (event) {
       event.preventDefault();
+        var email = $("#emailInput").val();
+        var phone = $("#phone").val();
+
+        if (email == "" || phone == ""){
+          alert("PLease Fill in all blanks to book a room")
+        }
+        else{
+          return true
+        }
+   
+      var personName = $("#fullname").val();
+
       var hostelNAme = $("#type").val();
 
       var hostelSize = $('#size').val();
@@ -59,19 +49,15 @@ $(document).ready(function () {
 
       var price = typePrice[hostelSize - 1];
        
-      newbookHostel = new bookHostel(hostelNAme, hostelSize, peopleinHostel);
-      newamount = new amount(price);
-      var order={
-        name:hostelNAme,
-        size:hostelSize,
-        people:peopleinHostel
-      }
+      var newbookHostel = new bookHostel(personName,phone,hostelNAme, hostelSize, peopleinHostel);
+      var newamount = new amount(price);
+      $("table#roomOrders").text('<tr><td id="name"'+newbookHostel.name+'</td><td id="phoneNo">' + newbookHostel.phone + '</td><td id="hostelName">'+newbookHostel.type + '</td><td id="hostelSize">'+newbookHostel.size+'</td><td id=" sharing"'+newbookHostel.people+'</td></tr>')
 
-      $("#test").html("You have booked " + order.name + "Room size:" + order.size + "with a capacity of " + order.people + "people"); 
+      
 
       $("#total").html(price);
 
     });
 
-  })
+  });
     
