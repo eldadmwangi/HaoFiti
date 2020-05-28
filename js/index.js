@@ -1,3 +1,6 @@
+
+
+
 // hostel booking functionality
 function bookHostel (name,phone,type,people,total) {
   this.name = name;
@@ -88,6 +91,7 @@ $(document).ready(function () {
       $(".message").html(personName+" you have successfully booked a room. You are required to pay Ksh. " + totalPrice + "  before your reporting date.Show your receipt in order to access your room,failure to which your room will be reallocated.After which, payment is due at the end of each month.");
       }
     });
+    
 
   });
-    
+  

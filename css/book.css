@@ -15,14 +15,17 @@
     color: thistle;
 }
 .navbar-nav{
-   margin-left: 800px;
+   margin-right: 800px;
 }
 .nav-item{
     margin-right: 50px;
+    
 }
 .navbar a{
     font-weight: 400;
     letter-spacing: 0.2em;
+    font-size: 15px;
+
 }
 
 
@@ -35,7 +38,7 @@
 }
 html,body{
     height: 100%;
-    font-family: 'Dosis', sans-serif;
+    
     
 
 }
@@ -51,6 +54,7 @@ html,body{
     background-size: cover;
     height:500px;
     position: relative;
+    
 }
 #total{
     display: none;
@@ -76,8 +80,13 @@ html,body{
     letter-spacing: 0.3em;
     position: absolute;
     text-transform: uppercase;
-    margin-top: 10%;
-    margin-left: 36%;
+    margin-top: 7%;
+    margin-left: 42%;
+    
+}
+.bookHead h1 {
+    font-family: 'Bangers', cursive;
+    font-size:30px;
 }
 .form-group{
     width: 50%;
