@@ -1,3 +1,6 @@
+
+
+
 // hostel booking functionality
 function bookHostel (name,phone,type,people) {
   this.name = name;
@@ -91,6 +94,7 @@ $(document).ready(function () {
       $(".message").html(personName+" you are required to pay Ksh. " + price + "  before you reporting date.Show your receipt in order to access your room.");
       }
     });
+    
 
   });
-    
+  

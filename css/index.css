@@ -15,7 +15,7 @@
     color: thistle;
 }
 .navbar-nav{
-   margin-left: 800px;
+   margin-right: 800px;
    
 }
 .nav-item{
@@ -28,11 +28,12 @@
     font-size: 15px;
 }
 .navbar-nav a:hover{
-    border-radius: 1px;
+    border-radius: 2px;
     text-transform: uppercase;
     transition-duration:1.5s ;
     transition: ease-in-out ;
 }
+
 html,body{
     height: 100%;
 }
@@ -43,9 +44,18 @@ html,body{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    height:50%;
+    height:500px;
     position: relative;
 }
+#who{
+    text-align: center;
+    font-size: 50px;
+}
+#who2{
+    text-align: center;
+    font-size: 25px;
+}
+
 
 .homeContent{
     color: white;
@@ -55,11 +65,12 @@ html,body{
     letter-spacing: 0.3em;
     position: absolute;
     text-transform: uppercase;
-    margin-top: 10%;
-    margin-left: 36%;
+    margin-top: 7%;
+    margin-left: 40%;
 }
-.homeContent h4{
-    font-family: 'Pacifico', cursive;
+.homeContent h1{
+    font-family: 'Bangers', cursive;
+    font-size:30px;
 }
 #maincard{
     display: flex;
