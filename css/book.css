@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda&family=Montserrat:wght@900&family=Noto+Serif:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 
 *{
-    padding: 0;
+    padding: 0px;
     margin: 0;
 }
 .navbar-brand{
@@ -34,8 +35,11 @@
 }
 html,body{
     height: 100%;
+    font-family: 'Dosis', sans-serif;
+    
+
 }
-.book,conta{
+.book{
     background-image: url("../Images/hostel11.jpg");
     background-color: rgba(0,0,0,0.65);
     background-blend-mode: darken;
@@ -44,6 +48,14 @@ html,body{
     background-size: cover;
     height:500px;
     position: relative;
+}
+.container{
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    margin-top: 50px;
+    border:none;
+    height: 60%;
+    box-shadow:0 0 15px 18px rgba(0,0,0,0.06);
 }
 .bookHead{
     color: white;
@@ -56,3 +68,29 @@ html,body{
     margin-top: 10%;
     margin-left: 36%;
 }
+.form-group{
+    width: 50%;
+    margin-left: 200px;
+    padding:15px;
+}
+input[type=text],input[type=number],input[type=email]{
+    padding:10px;
+    border-radius:5px;
+    
+  }
+  select{
+    padding:10px;
+    border-radius:10px;
+    border:0.5px solid grey;
+    
+  }
+
+footer {
+    background-color: #010808;
+    letter-spacing: 0.1em;
+    opacity: 0.9;
+    color: white;
+    padding: 32px;
+    margin-top: 300px;
+   
+  }
