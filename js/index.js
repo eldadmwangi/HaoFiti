@@ -30,6 +30,8 @@ var orderList=[];
 
 $(document).ready(function () {
 
+  
+
   $('#submitButton').click(function (event) {
       event.preventDefault();
         var email = $("#emailInput").val();
@@ -43,12 +45,26 @@ $(document).ready(function () {
       var hostelNAme = $("#type option:selected").val();
 
       var hostelSize = $('#size option:selected').val();
-      alert(hostelSize)
+      
       var peopleinHostel=$("#people option:selected").val();
-      alert(peopleinHostel);
-  
+      
 
-      var price = typePrice[hostelSize - 1];
+      switch(hostelSize){
+        case "3 Bedroom" :
+          price = 20000;
+          break;
+      
+      case "2 Bedroom":
+        price= 15000;
+        break;
+
+        case "1 Bedroom":
+          price = 10000;
+          break;
+      }
+
+
+      
 
       $("#name").html($("#fullname").val());
       
@@ -60,14 +76,23 @@ $(document).ready(function () {
       
        
       var newbookHostel = new bookHostel(personName,phone,hostelNAme, hostelSize, peopleinHostel);
-      var newamount = new amount(price);
-      
+
+      if(email == "" || phone == ""||personName== ""){
+        alert("Please fill in all blanks to book a room");
+        return false;
+      }
+      else if (phone.length !== 10){
+        alert("Please rewrite your Phone Number");
+        return false
+      }
+      else {
+      $("#total").fadeIn(2000);
       $("table#roomOrders").append('<tr><td id="name"'+newbookHostel.name+'</td><td id="phoneNo">' + newbookHostel.phone + '</td><td id="hostelName">'+newbookHostel.type + '</td><td id="hostelSize">'+newbookHostel.size+'</td><td id=" sharing"'+newbookHostel.people+'</td></tr>')
 
       
 
-      $("#total").html(price);
-
+      $(".message").html(personName+" you are required to pay Ksh. " + price + "  before you reporting date.Show your receipt in order to access your room.");
+      }
     });
     
 

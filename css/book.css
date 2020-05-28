@@ -53,6 +53,13 @@ html,body{
     position: relative;
     
 }
+#total{
+    display: none;
+}
+.holder {
+    padding: 10px;
+   margin-bottom: 30px;
+}
 .container{
     font-family: 'Dosis', sans-serif;
     font-size: 17px;
