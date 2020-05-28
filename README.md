@@ -25,6 +25,10 @@ Chrome browser.
 Teminal.
 Git VCS.
 
+## Screenshots
+![homepage screenshot](\images\readme.png)
+
+
 ### License
 Open Source License
 Copyright (c) 2020  Eldad Mwangi,Linda Tonui,Derrick Obwaya & Stella Waithera.
