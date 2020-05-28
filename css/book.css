@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda&family=Montserrat:wght@900&family=Noto+Serif:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 
 *{
     padding: 0;
@@ -34,6 +35,8 @@
 }
 html,body{
     height: 100%;
+    font-family: 'Dosis', sans-serif;
+
 }
 .book{
     background-image: url("../Images/hostel11.jpg");
@@ -44,6 +47,10 @@ html,body{
     background-size: cover;
     height:500px;
     position: relative;
+}
+.container{
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
 }
 .bookHead{
     color: white;
@@ -56,6 +63,22 @@ html,body{
     margin-top: 10%;
     margin-left: 36%;
 }
+.form-group{
+    width: 50%;
+    margin-left: 200px;
+}
+input[type=text],input[type=number],input[type=email]{
+    padding:10px;
+    border:0.3px solid grey;
+    
+  }
+  select{
+    padding:10px;
+    border-radius:10px;
+    border:0.5px solid grey;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  }
+
 footer {
     background-color: #010808;
     letter-spacing: 0.1em;
@@ -63,5 +86,5 @@ footer {
     color: white;
     padding: 32px;
     margin-top: 300px;
-    width: 100%;
+   
   }
