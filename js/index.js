@@ -1,3 +1,6 @@
+
+
+
 // hostel booking functionality
 function bookHostel (name,phone,type,people) {
   this.name = name;
@@ -66,6 +69,7 @@ $(document).ready(function () {
       $("#total").html(price);
 
     });
+    
 
   });
-    
+  
