@@ -39,6 +39,9 @@ html,body{
     
 
 }
+ .thanks{
+    font-family: 'Pacifico', cursive !important;
+}
 .book{
     background-image: url("../Images/hostel11.jpg");
     background-color: rgba(0,0,0,0.65);
@@ -55,6 +58,7 @@ html,body{
 .holder {
     padding: 10px;
    margin-bottom: 30px;
+   word-spacing: 0.3em;
 }
 .container{
     font-family: 'Dosis', sans-serif;
@@ -91,6 +95,58 @@ input[type=text],input[type=number],input[type=email]{
     border:0.5px solid grey;
     
   }
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox label {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+}
+
+.checkbox label::before{
+    height: 16px;
+    width: 16px;
+    
+    border: 1px solid;
+    left: 0px;
+    
+   
+    top: 3px;
+}
+
+.checkbox label::after {
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    
+    transform: rotate(-45deg);
+    
+    left: 4px;
+    top: 7px;
+}
+
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+    
+}
+
+
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+
 
 footer {
     background-color: #010808;

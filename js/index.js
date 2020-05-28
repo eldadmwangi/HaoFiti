@@ -1,15 +1,13 @@
 // hostel booking functionality
-function bookHostel (name,phone,type,people) {
+function bookHostel (name,phone,type,people,total) {
   this.name = name;
   this.phone = phone;
   this.type = type;
   this.size =size;
   this.people = people;
-}
+  this.total = total;
 
-bookHostel.prototype.fullbookHostel = function () {
-  return this.name + " " + this.type + " and " + this.people;
-};
+}
 
 function amount(price) {
   this.price = price;
@@ -32,19 +30,16 @@ $(document).ready(function () {
   $('#submitButton').click(function (event) {
       event.preventDefault();
         var email = $("#emailInput").val();
-        
         var phone = $("#phone").val();
+        var personName = $("#fullname").val();
+        var hostelNAme = $("#type option:selected").val();
+        var hostelSize = $('#size option:selected').val();
+        var peopleinHostel=$("#people option:selected").val();
+        var services= [];
+         $.each($("input[name='services']:checked"),function(){
+         services.push($(this).val());
+            });
         
-
-   
-      var personName = $("#fullname").val();
-
-      var hostelNAme = $("#type option:selected").val();
-
-      var hostelSize = $('#size option:selected').val();
-      
-      var peopleinHostel=$("#people option:selected").val();
-      
 
       switch(hostelSize){
         case "3 Bedroom" :
@@ -59,6 +54,8 @@ $(document).ready(function () {
           price = 10000;
           break;
       }
+      var priceForServices = services.length * 2000;
+      totalPrice = price + priceForServices;
 
 
       
@@ -69,10 +66,10 @@ $(document).ready(function () {
       $("#hostelName").html($("#type option:selected").val());
       $("#hostelSize").html($("#size option:selected").val());
       $("#sharing").html($("#people option:selected").val());
-      
+      $("#service").html(services.join(", "));
       
        
-      var newbookHostel = new bookHostel(personName,phone,hostelNAme, hostelSize, peopleinHostel);
+      var newbookHostel = new bookHostel(personName,phone,hostelNAme, hostelSize, peopleinHostel,totalPrice);
 
       if(email == "" || phone == ""||personName== ""){
         alert("Please fill in all blanks to book a room");
@@ -84,11 +81,11 @@ $(document).ready(function () {
       }
       else {
       $("#total").fadeIn(2000);
-      $("table#roomOrders").append('<tr><td id="name"'+newbookHostel.name+'</td><td id="phoneNo">' + newbookHostel.phone + '</td><td id="hostelName">'+newbookHostel.type + '</td><td id="hostelSize">'+newbookHostel.size+'</td><td id=" sharing"'+newbookHostel.people+'</td></tr>')
+      $("table#roomOrders").append('<tr><td id="name"'+newbookHostel.name+'</td><td id="phoneNo">' + newbookHostel.phone + '</td><td id="hostelName">'+newbookHostel.type + '</td><td id="hostelSize">'+newbookHostel.size+'</td><td id=" sharing"'+newbookHostel.people+  '</td><td id="services">'+newbookHostel.total +'</td></tr>')
 
       
 
-      $(".message").html(personName+" you are required to pay Ksh. " + price + "  before you reporting date.Show your receipt in order to access your room.");
+      $(".message").html(personName+" you have successfully booked a room. You are required to pay Ksh. " + totalPrice + "  before your reporting date.Show your receipt in order to access your room,failure to which your room will be reallocated.After which, payment is due at the end of each month.");
       }
     });
 
