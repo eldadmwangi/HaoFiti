@@ -2,9 +2,9 @@
 HAOFITI
 
 #### By 
-Eldad Mwangi
-Linda Tonui
-Derrick Obwaya
+Eldad Mwangi,
+Linda Tonui,
+Derrick Obwaya &
 Stella Waithera
 
 
@@ -27,4 +27,8 @@ Git VCS.
 
 ### License
 Open Source License
-Copyright (c) 2020  Eldad Mwangi,Linda Tonui,Derrick Obwaya & Stella Waithera.
+Copyright (c) 2020  
+Eldad Mwangi,
+Linda Tonui,
+Derrick Obwaya & 
+Stella Waithera.
