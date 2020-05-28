@@ -103,6 +103,31 @@
               <option value="3 people">shared--3</option>
             </select>
           </div>
+          <div class="form-group">
+            <label for="toppings"> What extra services would you want?  </label>
+            
+            <p>
+              <input type="checkbox" name="services" value="Wi-Fi" id="wifi"/>
+              <label for="wifi">Wi-Fi</label>
+            </p>
+            <p>
+              <input type="checkbox" name="services" value="Break Fast" id="break" checked="checked"  />
+              <label for="break">Break Fast</label>
+            </p>
+            <p>
+              <input type="checkbox"  name="services" value="Gym" id="gym" />
+              <label for="gym">Gym</label>
+            </p>
+             
+            <p>
+              <input type="checkbox" name="services" value="Laundry" id="laundry" />
+              <label for="laundry">Laundry</label>
+            </p>
+            <p>
+              <input type="checkbox" name="services" value="Transport" id="transport"  />
+              <label for="transport">Transport</label>
+          </p>
+          </div>
 
           
           <div class="form-group">
@@ -123,6 +148,7 @@
                       <th scope="col">Hostel Name</th>
                       <th scope="col">Hostel Size</th>
                       <th scope="col">People Sharing</th>
+                      <th scope="col">Services</th>
                      
                     </tr>
                   </thead>
@@ -133,12 +159,16 @@
                       <td id="hostelName"></td>
                       <td id="hostelSize"></td>
                       <td id="sharing"></td>
+                      <td id="service"></td>
+                
                     </tr>                  
                   </tbody>
                 </table>
                 </div>
                 <div class="holder" >
-                 <h3 class="message"></h2>
+                 <h4 class="message">
+                   <h2 class=" thanks text-center"> Thank you for choosing us!</h2>
+                 </h4>
                 </div>
 
                 
