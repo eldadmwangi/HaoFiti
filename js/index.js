@@ -45,7 +45,7 @@ amount.prototype.finalamount = function () {
   return this.price;
 };
 
-var typePrice = [20000, 15000, 5000]
+var typePrice = [20000, 15000, 10000]
 var orderList=[];
 
 $(document).ready(function () {
