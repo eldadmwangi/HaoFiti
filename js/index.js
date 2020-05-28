@@ -30,28 +30,36 @@ $(document).ready(function () {
   $('#submitButton').click(function (event) {
       event.preventDefault();
         var email = $("#emailInput").val();
+        
         var phone = $("#phone").val();
+        
 
-        if (email == "" || phone == ""){
-          alert("PLease Fill in all blanks to book a room")
-        }
-        else{
-          return true
-        }
    
       var personName = $("#fullname").val();
 
-      var hostelNAme = $("#type").val();
+      var hostelNAme = $("#type option:selected").val();
 
-      var hostelSize = $('#size').val();
-      var peopleinHostel=$("#people").val();
+      var hostelSize = $('#size option:selected').val();
+      alert(hostelSize)
+      var peopleinHostel=$("#people option:selected").val();
+      alert(peopleinHostel);
   
 
       var price = typePrice[hostelSize - 1];
+
+      $("#name").html($("#fullname").val());
+      
+      $("#phoneNo").html( $("#phone").val());
+      $("#hostelName").html($("#type option:selected").val());
+      $("#hostelSize").html($("#size option:selected").val());
+      $("#sharing").html($("#people option:selected").val());
+      
+      
        
       var newbookHostel = new bookHostel(personName,phone,hostelNAme, hostelSize, peopleinHostel);
       var newamount = new amount(price);
-      $("table#roomOrders").text('<tr><td id="name"'+newbookHostel.name+'</td><td id="phoneNo">' + newbookHostel.phone + '</td><td id="hostelName">'+newbookHostel.type + '</td><td id="hostelSize">'+newbookHostel.size+'</td><td id=" sharing"'+newbookHostel.people+'</td></tr>')
+      
+      $("table#roomOrders").append('<tr><td id="name"'+newbookHostel.name+'</td><td id="phoneNo">' + newbookHostel.phone + '</td><td id="hostelName">'+newbookHostel.type + '</td><td id="hostelSize">'+newbookHostel.size+'</td><td id=" sharing"'+newbookHostel.people+'</td></tr>')
 
       
 
