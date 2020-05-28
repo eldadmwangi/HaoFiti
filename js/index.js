@@ -48,19 +48,20 @@ $(document).ready(function () {
 
       switch(hostelSize){
         case "3 Bedroom" :
-          price = 20,000;
+          price = 20000;
           break;
       
       case "2 Bedroom":
-        price= 15,000;
+        price= 15000;
         break;
 
         case "1 Bedroom":
-          price = 10,000
+          price = 10000;
+          break;
       }
 
 
-      var price = typePrice[hostelSize - 1];
+      
 
       $("#name").html($("#fullname").val());
       
@@ -87,7 +88,7 @@ $(document).ready(function () {
 
       
 
-      $(".message").html(personName+" you are required to pay Ksh." + price + " before you reporting date.Show your receipt in order to access your room.");
+      $(".message").html(personName+" you are required to pay Ksh. " + price + "  before you reporting date.Show your receipt in order to access your room.");
       }
     });
 
