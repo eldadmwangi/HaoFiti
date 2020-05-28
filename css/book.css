@@ -56,3 +56,12 @@ html,body{
     margin-top: 10%;
     margin-left: 36%;
 }
+footer {
+    background-color: #010808;
+    letter-spacing: 0.1em;
+    opacity: 0.9;
+    color: white;
+    padding: 32px;
+    margin-top: 300px;
+    width: 100%;
+  }
